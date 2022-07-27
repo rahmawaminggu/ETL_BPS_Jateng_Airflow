@@ -24,11 +24,11 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.dummy_operator import DummyOperator
+from airflow.providers.odbc import pyodbc as odbc
 
 import requests
 import pandas as pd
 import sys
-import pyodbc as odbc
 
 
 url = 'https://webapi.bps.go.id/v1/api/list/model/data/domain/3300/var/87/key/206dc477af8073658139f101fc153b32/'
