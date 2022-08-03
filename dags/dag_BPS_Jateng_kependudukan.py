@@ -24,9 +24,9 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.dummy_operator import DummyOperator
-from airflow.providers.odbc import pyodbc as odbc
 
 import requests
+import pyodbc as odbc
 import pandas as pd
 import sys
 
